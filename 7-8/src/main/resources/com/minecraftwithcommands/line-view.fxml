@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="com.minecraftwithcommands.CommandLineController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="commandLine" layoutX="3.0" layoutY="2.0" prefHeight="48.0" prefWidth="569.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button onAction="#onExecuteButtonPressed" layoutX="572.0" layoutY="2.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="112.0" text="Execute" />
+   </children>
+</AnchorPane>

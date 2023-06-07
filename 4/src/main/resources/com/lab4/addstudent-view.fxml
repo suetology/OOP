@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/19" fx:controller="com.lab4.FXControllers.AddStudentsController" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="nameField" layoutX="83.0" layoutY="57.0" promptText="Name" />
+      <TextField fx:id="surnameField" layoutX="83.0" layoutY="97.0" promptText="Surname" />
+      <Button fx:id="addStudentButton" onAction="#onAddStudentButtonPressed" layoutX="83.0" layoutY="139.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="171.0" text="Add to group X" />
+   </children>
+</AnchorPane>

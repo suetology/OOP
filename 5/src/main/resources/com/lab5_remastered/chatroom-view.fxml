@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab5_remastered.ClientSide.ChatRoomController">
+   <children>
+      <Button layoutX="681.0" layoutY="558.0" mnemonicParsing="false" onAction="#onSendButtonPressed" prefHeight="34.0" prefWidth="145.0" text="Send" />
+      <TextArea fx:id="chatTextArea" layoutX="14.0" layoutY="14.0" prefHeight="406.0" prefWidth="812.0" />
+      <TextArea fx:id="messageTextArea" layoutX="14.0" layoutY="427.0" prefHeight="118.0" prefWidth="812.0" />
+   </children>
+</AnchorPane>

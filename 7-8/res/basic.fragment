@@ -1,0 +1,28 @@
+#version 330 core
+
+out vec4 FragColor;
+
+uniform sampler2D tex;
+in vec2 texCoords;
+in vec3 normal;
+
+struct DirectionalLight {
+    vec3 direction;
+
+    vec3 ambient;
+    vec3 diffuse;
+};
+
+uniform DirectionalLight uLight;
+
+void main() {
+    vec3 norm = normalize(normal);
+    vec3 lightDir = normalize(-uLight.direction);
+
+    vec3 ambient = uLight.ambient * vec3(texture(tex, texCoords));
+
+    float diffuseStrength = max(dot(lightDir, norm), 0.0f);
+    vec3 diffuse = diffuseStrength * uLight.diffuse * vec3(texture(tex, texCoords));
+
+    FragColor = vec4(ambient + diffuse, 1.0f);
+}
